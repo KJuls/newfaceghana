@@ -6,45 +6,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--Main Stylesheet-->
 	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<link href="common/js/jquery.min.js">
-	<script>
-            /* When the user clicks on the button,
-             toggle between hiding and showing the dropdown content */
-
-            $(document).ready(function () {
-
-                $("a.dropdown-link").click(function (e) {
-                    e.preventDefault();
-                    var $div = $(this).data('container');
-                    $div = $('#' + $div);
-                    $(".dropdown-boxes").not($div).hide();
-                    $($div).toggle();
-                });
-
-                $(document).on('click', function (e) {
-                    if ($(e.target).closest(".app-header").length === 0) {
-                        $(".dropdown-boxes").hide();
-                    }
-                });
-
-            });
-
-// Close the dropdown if the user clicks outside of it
-            window.onclick = function (event) {
-
-                document.getElementById("app-notification").classList.remove("show");
-                document.getElementById("user-functions").classList.remove("show");
-                document.getElementById("userNav").classList.remove("show");
-            }
-
-        </script>
 </head>
+<script>
+function openNav() {
+    document.getElementById("side-nav").style.width = "50%";
+}
+
+function closeNav() {
+    document.getElementById("side-nav").style.width = "0";
+}
+</script>
 <body class="app-main">
 	<header class="app-header">
 		<img src="imgs/newface-logo-mob3.png">
+
 		<span class="pop-nav">
-			<a href=""><i class="fa fa-navicon"></i></a>
+			<i class="fa fa-navicon" onclick="openNav()"></i>
 		</span>
+
+		<div id="side-nav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="index.php">Home</a>
+		  <a href="#">Our Vision</a>
+		  <a href="#">Gallery</a>
+		  <a href="#">Get Involved</a>
+			<a href="#">Contact</a>
+		</div>
+
 	</header>
 	<section class="app-body">
 		<section class="side-bar">
@@ -60,6 +48,7 @@
 				<li><a href="#">Get Invloved</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
+
 			<div class="social-media">
       <a href="facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 			<a href="instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
