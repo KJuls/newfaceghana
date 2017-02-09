@@ -1,0 +1,316 @@
+body{
+	background-color: #f5f5f5;
+	font-size: 15px;
+  font-family: "Poppins";
+  margin: 0;
+
+}
+
+.app-main {
+    background: rgba(0, 0, 0, 0) url("../imgs/kid.png") no-repeat scroll 102% 106%;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+}
+
+.app-header{
+    display: none;
+    height: 70px;
+    background-color: #f5f5f5;
+}
+
+.app-body {
+    flex: 2;
+    overflow: auto;
+    display: flex;
+}
+
+.app-content{
+    padding: 1%;
+    width: 100%;
+    background: url(../imgs/kid.png);
+}
+
+.side-bar {
+    flex: 0 0 200px;
+}
+
+.side-bar-area {
+    background: #f5f5f5 none repeat scroll 0 0;
+    height: 100%;
+    position: fixed;
+    width: 200px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    display: flex;
+		align-items: center;
+}
+
+.nav-helper {
+    float: left;
+    padding: 8px 42px;
+    width: 100%;
+}
+
+.social-media {
+	  bottom: 53px;
+    font-size: 23px;
+    padding: 30px;
+		padding-left: 45px;
+    position: absolute;
+	}
+.social-media a{
+	color: #444;
+}
+
+.app-content p{
+	font-weight: 100;
+}
+
+.social-media a:hover{
+	color: #01b369;
+}
+.nav-helper li a{
+    text-decoration: none;
+    color: #444;;
+		font-size: 14px;
+		font-weight: 500;
+}
+
+.nav-helper li a:hover{
+    color:#01b369;
+}
+
+.nav-helper li {
+    margin-bottom: 20px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.app-logo img{
+    width: 135px;
+    padding: 0 0 9px 20px;
+}
+
+.app-header img {
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
+		padding: 14px 0 0 10px;
+}
+
+.pop-nav{
+	right: 20px;
+	top: 20px;
+	font-size: 24px;
+	position: absolute;
+}
+
+.pop-nav a{
+	color: #444;
+}
+
+.pop-nav a:hover{
+	color: #01b369;
+}
+
+
+/*!
+ *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* makes the font 33% larger relative to the icon container */
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.fa-inverse {
+  color: #ffffff;
+}
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+
+.fa-facebook-official:before {
+  content: "\f230";
+}
+
+.fa-facebook-square:before{
+	content: "\f082";
+}
+
+.fa-twitter-square:before {
+  content: "\f081";
+}
+
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+.fa-google-plus-square:before {
+  content: "\f0d4";
+}
+
+.fa-linkedin-square:before {
+  content: "\f08c";
+}
+
+.fa-linkedin:before {
+  content: "\f0e1";
+}
+
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+.fa-twitter:before {
+  content: "\f099";
+}
+
+.fa-google-plus:before {
+  content: "\f0d5";
+}
+
+.fa-search:before {
+  content: "\f002";
+}
+
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+.fa-print:before {
+  content: "\f02f";
+}
+
+.fa-navicon:before {
+  content: "\f0c9";
+}
+.fa-arrow-right:before {
+  content: "\f061";
+}
+.fa-arrow-up:before {
+  content: "\f062";
+}
+.fa-arrow-down:before {
+  content: "\f063";
+}
+.fa-arrow-down:before {
+  content: "\f063";
+}
+
+.fa-caret-left:before {
+  content: "\f0d9";
+}
+
+.fa-tachometer:before {
+  content: "\f0e4";
+}
+
+.fa-file-text:before {
+  content: "\f15c";
+}
+
+.fa-building:before {
+  content: "\f1ad";
+}
+
+.fa-line-chart:before {
+  content: "\f201";
+}
+
+.fa-bell:before {
+  content: "\f0f3";
+}
+
+.fa-cog:before {
+  content: "\f013";
+}
+
+.fa-exchange:before {
+  content: "\f0ec";
+}
+
+.fa-sign-out:before {
+  content: "\f08b";
+}
+
+.fa-caret-down:before {
+  content: "\f0d7";
+}
+
+
+.fa-users:before {
+  content: "\f0c0";
+}
+
+.fa-handshake-o:before {
+  content: "\f2b5";
+}
+
+
+.fa-bar-chart:before {
+  content: "\f080";
+}
+
+/*
+    Responsive
+*/
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+    .side-bar{
+        display: none;
+    }
+
+    .app-header{
+        display: block;
+
+    }
+
+		.app-content{
+			padding:0 15px 0 15px;
+		}
+}
