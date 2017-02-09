@@ -54,11 +54,16 @@ body{
     width: 100%;
 }
 
+.social-media-mob{
+    font-size: 23px;
+    position: absolute;
+}
+
 .social-media {
 	  bottom: 53px;
     font-size: 23px;
     padding: 30px;
-		padding-left: 45px;
+		padding-left: 38px;
     position: absolute;
 	}
 .social-media a{
@@ -99,6 +104,11 @@ body{
     text-align: center;
     margin: 0 auto;
 		padding: 14px 0 0 10px;
+}
+
+h3{
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .pop-nav{
@@ -447,4 +457,9 @@ body{
 
 .fa-bar-chart:before {
   content: "\f080";
+}
+
+
+.fa-envelope-o:before{
+  content: "\f003";
 }
