@@ -57,6 +57,14 @@ body{
 .social-media-mob{
     font-size: 23px;
     position: absolute;
+    display: flex;
+    left: 13px;
+}
+
+.social-media-mob > a{
+  font-size: 27px !important;
+  padding-left: 20px !important;
+  margin-top: 10px;
 }
 
 .social-media {
@@ -190,7 +198,7 @@ h3{
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 5px;
     font-size: 36px;
     margin-left: 50px;
 }
