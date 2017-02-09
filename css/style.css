@@ -3,7 +3,7 @@ body{
 	background-color: #f5f5f5;
 	font-size: 15px;
   margin: 0;
-  @import url(//fonts.googleapis.com/css?family=Open+Sans);
+  font-family:"poppinslight";
 
 }
 
@@ -273,7 +273,7 @@ body{
 
 }
 
- 
+
 
 @font-face {
   font-family: 'FontAwesome';
