@@ -7,11 +7,6 @@ body{
 
 }
 
-/*@font-face {
-   font-family:"Poppins";
-   src:url(fonts/Poppins-Bold.ttf) ,url(fonts/Poppins-Light.ttf) format('truetype'),url(fonts/Poppins-Medium.ttf) format('truetype'),url(fonts/Poppins-Regular.ttf) format('truetype'),url(fonts/Poppins-SemiBold.ttf) format('truetype');
-}
-*/
 .app-main {
     background: rgba(0, 0, 0, 0) url("../imgs/kid.png") no-repeat scroll 102% 106%;
     display: flex;
@@ -221,6 +216,64 @@ body{
  */
 /* FONT PATH
  * -------------------------- */
+@font-face {
+    font-family: 'poppinsbold';
+    src: url('fonts/p-bold-webfont.woff2') format('woff2'),
+         url('fonts/p-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppinslight';
+    src: url('fonts/p-light-webfont.woff2') format('woff2'),
+         url('fonts/p-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('fonts/p-medium-webfont.woff2') format('woff2'),
+         url('fonts/p-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('fonts/p-regular-webfont.woff2') format('woff2'),
+         url('fonts/p-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppinssemibold';
+    src: url('fonts/p-semibold-webfont.woff2') format('woff2'),
+         url('fonts/p-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+ 
 
 @font-face {
   font-family: 'FontAwesome';
