@@ -1,35 +1,37 @@
 
 body{
-	background-color: #01b369;
-	font-size: 15px;
   margin: 0;
+	background-color: #01b369;
   font-family:"poppinslight";
+	font-size: 15px;
   line-height: 150%;
 
 }
 
 .app-main {
-    background: rgba(0, 0, 0, 0) url("../imgs/kid.png") no-repeat scroll 102% 106%;
     display: flex;
-    flex-flow: column nowrap;
     height: 100%;
+    background: rgba(0, 0, 0, 0) url("../imgs/kid.png") no-repeat scroll 102% 106%;
+    flex-flow: column nowrap;
 }
 
 .app-header{
     display: none;
     height: 70px;
     background-color: #f5f5f5;
+    position: fixed;
+    width: 100%;
 }
 
 .app-body {
-    flex: 2;
-    overflow: auto;
     display: flex;
+    overflow: auto;
+    flex: 2;
 }
 
 .app-content{
-    padding: 1%;
     width: 100%;
+    padding: 1%;
     background: url(../imgs/kid.png);
 }
 
@@ -38,46 +40,52 @@ body{
 }
 
 .side-bar-area {
-    background: #f5f5f5 none repeat scroll 0 0;
-    height: 100%;
     position: fixed;
-    width: 200px;
-    vertical-align: middle;
-    box-sizing: border-box;
     display: flex;
+    box-sizing: border-box;
+    width: 200px;
+    height: 100%;
+    vertical-align: middle;
+    background: #f5f5f5 none repeat scroll 0 0;
 		align-items: center;
 }
 
 .nav-helper {
     float: left;
-    padding: 8px 42px;
     width: 100%;
+    padding: 8px 42px;
 }
 
+.img-gallery{
+  float: left;
+  padding-right: 25px;
+  width: 25%;
+}
+
+
 .social-media-mob{
-    font-size: 23px;
     position: absolute;
-    display: flex;
     left: 13px;
+    display: flex;
+    font-size: 23px;
 }
 
 .social-media-mob > a{
-  font-size: 27px !important;
-  padding-left: 20px !important;
   margin-top: 10px;
+  padding-left: 20px !important;
+  font-size: 27px !important;
 }
 
 .social-media {
+    position: absolute;
 	  bottom: 53px;
-    font-size: 23px;
     padding: 30px;
 		padding-left: 38px;
-    position: absolute;
+    font-size: 23px;
 	}
 .social-media a{
 	color: #444;
 }
-
 .app-content p{
 	font-weight: 100;
 }
@@ -87,7 +95,7 @@ body{
 }
 .nav-helper li a{
     text-decoration: none;
-    color: #444;;
+    color: #444;
 		font-size: 14px;
 		font-weight: 500;
 }
@@ -109,22 +117,26 @@ body{
 
 .app-header img {
     width: 150px;
-    text-align: center;
     margin: 0 auto;
 		padding: 14px 0 0 10px;
+
+    text-align: center;
 }
 
 h3{
-  font-weight: 800;
   text-transform: uppercase;
+
+  font-weight: 800;
 }
 
 .pop-nav{
-	right: 20px;
-	top: 20px;
-	font-size: 24px;
 	position: absolute;
+	top: 20px;
+	right: 20px;
+
 	cursor: pointer;
+
+	font-size: 24px;
 }
 
 .pop-nav a{
@@ -136,25 +148,33 @@ h3{
 }
 
 .nav-mob {
-    height: 100%;
-    width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+
     overflow-x: hidden;
-    transition: 0.5s;
+
+    width: 0;
+    height: 100%;
     padding-top: 60px;
+
+    transition: 0.5s;
+
+    background-color: #111;
 }
 
 .nav-mob a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
     display: none;
+
+    padding: 8px 8px 8px 32px;
+
     transition: 0.3s
+    text-decoration: none;
+
+    color: #818181;
+
+    font-size: 25px;
 }
 
 .nav-mob a:hover, .offcanvas a:focus{
@@ -165,30 +185,32 @@ h3{
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+
     margin-left: 50px;
+
+    font-size: 36px;
 }
 
 .sidenav {
-    height: 100%;
-    width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
     overflow-x: hidden;
-    transition: 0.5s;
+    width: 0;
+    height: 100%;
     padding-top: 60px;
+    transition: 0.5s;
+    background-color: #111;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 18px;
-    color: #f5f5f5;
     display: block;
+    padding: 8px 8px 8px 32px;
     transition: 0.3s;
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
 }
 
 .sidenav a:hover, .offcanvas a:focus{
@@ -197,10 +219,10 @@ h3{
 
 .sidenav .closebtn {
     position: absolute;
-    top: 0;
-    right: 5px;
-    font-size: 36px;
+    top: 15px;
+    right: 15px;
     margin-left: 50px;
+    font-size: 36px;
 }
 
 /*
@@ -212,16 +234,13 @@ h3{
     .side-bar{
         display: none;
     }
-
     .app-header{
         display: block;
 
     }
-
-
-
 		.app-content{
 			padding:0 15px 0 15px;
+      margin-top: 70px;
 		}
 
 
@@ -237,10 +256,10 @@ h3{
  * -------------------------- */
 @font-face {
     font-family: 'poppinsbold';
-    src: url('fonts/p-bold-webfont.woff2') format('woff2'),
-         url('fonts/p-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    src: url('fonts/p-bold-webfont.woff2') format('woff2'),
+         url('fonts/p-bold-webfont.woff') format('woff');
 
 }
 
@@ -249,10 +268,10 @@ h3{
 
 @font-face {
     font-family: 'poppinslight';
-    src: url('fonts/p-light-webfont.woff2') format('woff2'),
-         url('fonts/p-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    src: url('fonts/p-light-webfont.woff2') format('woff2'),
+         url('fonts/p-light-webfont.woff') format('woff');
 
 }
 
@@ -261,10 +280,10 @@ h3{
 
 @font-face {
     font-family: 'poppinsmedium';
-    src: url('fonts/p-medium-webfont.woff2') format('woff2'),
-         url('fonts/p-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    src: url('fonts/p-medium-webfont.woff2') format('woff2'),
+         url('fonts/p-medium-webfont.woff') format('woff');
 
 }
 
@@ -273,10 +292,10 @@ h3{
 
 @font-face {
     font-family: 'poppinsregular';
-    src: url('fonts/p-regular-webfont.woff2') format('woff2'),
-         url('fonts/p-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    src: url('fonts/p-regular-webfont.woff2') format('woff2'),
+         url('fonts/p-regular-webfont.woff') format('woff');
 
 }
 
@@ -285,10 +304,10 @@ h3{
 
 @font-face {
     font-family: 'poppinssemibold';
-    src: url('fonts/p-semibold-webfont.woff2') format('woff2'),
-         url('fonts/p-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    src: url('fonts/p-semibold-webfont.woff2') format('woff2'),
+         url('fonts/p-semibold-webfont.woff') format('woff');
 
 }
 
@@ -296,10 +315,10 @@ h3{
 
 @font-face {
   font-family: 'FontAwesome';
-  src: url('fonts/fontawesome-webfont.eot?v=4.7.0');
-  src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
+  src: url('fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
 }
 .fa {
   display: inline-block;
