@@ -3,7 +3,8 @@
 		include ("header-inc.php");
 ?>
 		<main class="app-content">
-		<h3>Gallery</h3>
+			
+		<h1>Gallery</h1>
 		<div class="img-gallery">
   <div class="img">
     <a target="_blank" href="img_fjords.jpg">

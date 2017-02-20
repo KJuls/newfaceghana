@@ -4,7 +4,7 @@
 ?>
 		<main class="app-content">
 
-		<h3>lorem</h3>
+		<h1>Lorem</h1>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 			sed do eiusmod tempor incididunt ut labore et dolore magna

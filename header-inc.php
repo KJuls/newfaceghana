@@ -54,7 +54,7 @@ function closeNav() {
 				<li><a href="our-vision.php">Our Vision</a></li>
 				<li><a href="gallery.php">Gallery</a></li>
 				<li><a href="get-involved.php">Get Invloved</a></li>
-				<li><a href="contacts.php">Contact</a></li>
+				<li><a href="contact.php">Contact</a></li>
 			</ul>
 
 			<div class="social-media">
