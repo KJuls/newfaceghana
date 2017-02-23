@@ -10,7 +10,7 @@
 </head>
 <script>
 function openNav() {
-    document.getElementById("side-nav").style.width = "100%";
+    document.getElementById("side-nav").style.width = "95%";
 }
 
 function closeNav() {
