@@ -5,9 +5,9 @@
 		<main class="app-content">
 
 		<h1>Contact Us</h1>
-		<h3>
-			We will be happy to hear from you! For questions related to our foundation's functions, including media and investor relations, please see below.
-		</h3>
+
+			<p>We will be happy to hear from you! For questions related to our foundation's functions, including media and investor relations, please see below.</p>
+
 		<hr />
 		<div class="contact-container">
 
