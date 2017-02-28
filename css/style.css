@@ -2,7 +2,7 @@
 body{
   margin: 0;
 	background-color: #01b369;
-  font-family:"Open Sans";
+  font-family:'open_sanslight';
 	font-size: 18px;
   line-height: 150%;
   color: #444
@@ -96,14 +96,12 @@ body{
   float: left;
   padding-top: 40px;
 }
-
 .map-container iframe{
   float: right;
   border-radius: 5px;
   width: 60%;
   margin-top: 20px;
 }
-
 .loopui-form-stacked{
   margin-top: 40px;
 }
@@ -119,7 +117,7 @@ body{
   display: inline-block;
   width: 100% !important;
   font-size: 15px;
-  font-family:"poppinslight" !important;
+  font-family:'open_sanslight' !important;
 }
 
 .submit-btn{
@@ -141,14 +139,11 @@ body{
     width: 100%;
     padding: 8px 42px;
 }
-
 .img-gallery{
   float: left;
   padding-right: 25px;
   width: 25%;
 }
-
-
 .social-media-mob{
     position: absolute;
     left: 13px;
@@ -205,7 +200,6 @@ body{
     width: 150px;
     margin: 0 auto;
 		padding: 14px 0 0 10px;
-
     text-align: center;
 }
 
@@ -218,16 +212,12 @@ h3,h2,h1{
 	position: absolute;
 	top: 20px;
 	right: 20px;
-
 	cursor: pointer;
-
 	font-size: 24px;
 }
-
 .pop-nav a{
 	color: #444;
 }
-
 .pop-nav a:hover{
 	color: #01b369;
 }
@@ -237,28 +227,20 @@ h3,h2,h1{
     z-index: 1;
     top: 0;
     left: 0;
-
     overflow-x: hidden;
-
     width: 0;
     height: 100%;
     padding-top: 60px;
-
     transition: 0.5s;
-
     background-color: #111;
 }
 
 .nav-mob a {
     display: none;
-
     padding: 8px 8px 8px 32px;
-
     transition: 0.3s
     text-decoration: none;
-
     color: #818181;
-
     font-size: 25px;
 }
 
@@ -319,6 +301,10 @@ hr{
     color: #f1f1f1;
 }
 
+.sidenav a:hover{
+  color: #01b369;
+}
+
 .sidenav .closebtn {
     position: absolute;
     top: 15px;
@@ -344,7 +330,6 @@ hr{
 			padding:0 15px 0 15px;
       margin-top: 70px;
 		}
-
     .loopui-form{
       padding-top: 50px;
       padding-bottom: 50px;
@@ -361,10 +346,6 @@ hr{
     .loopui-form label{
       display: inline-block;
     }
-
-    /*.loopui-form .stacked input, .loopui-form .stacked select, .loopui-form .stacked textarea, .loopui-form .stacked2 input, .loopui-form .stacked2 select, .loopui-form .stacked2 textarea {
-        width: 100% !important;
-    }*/
 
     .map-container{
       width: 235px;
